@@ -1,16 +1,38 @@
 h1 {
-    color: blue;
+  color: blue;
 }
-.hotpink-header{
-    color: hotpink;
+.hotpink-header {
+  color: hotpink;
 }
 
-nav a{
-    color: green;
+nav a {
+  color: green;
 }
-a{
-    color: lime;
+
+a {
+  color: rgb(239, 21, 247);
 }
+
 #top {
-    background: mediumorchid;
+  background: mediumorchid;
+}
+
+.navigation{
+    background: #09f009;
+    padding: 10px;
+    border-radius: 20px;
+    width: 350px;
+}
+
+.navigation__links{
+    margin-right: 20px;
+    color: navy;
+    display: inline-block;
+}
+
+.navigation__links--homepage{
+    color: #ffffff;
+}
+.main{
+    width: 100px;
 }
