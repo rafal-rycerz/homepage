@@ -34,5 +34,6 @@ a {
     color: #ffffff;
 }
 .main{
-    width: 100px;
+    width: 1000px;
+    margin: auto;
 }
