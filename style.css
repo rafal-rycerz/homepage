@@ -34,6 +34,24 @@ a {
     color: #ffffff;
 }
 .main{
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
+    }
+
+.article{
+    color: navy;
+    background: rgb(214, 207, 207);
+}
+
+.article__headline{
+    color: hotpink;
+    background: khaki;
+    font-size: 30px;
+}
+.article__headline--h3{
+    font-size: 20px;
+}
+
+.article__paragraph{
+    background: lightcoral;
 }
