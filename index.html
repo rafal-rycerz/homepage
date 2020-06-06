@@ -9,7 +9,7 @@
 
   <body>
     <header>
-      <nav class="navigation main">
+      <nav class="navigation">
         <a
           class="navigation__links navigation__links--homepage"
           href="index.html"
@@ -22,11 +22,10 @@
     </header>
 
     <main class="main">
-      <div>
-        <header id="top">
+        <header id="top" class="header">
           <h1>Rafał - Strona Domowa</h1>
         </header>
-        <section class="article">
+        <aside class="aside">
           <h2 class="article__headline">Kim Jestem?</h2>
           <p class="article__paragraph">
             Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem
@@ -37,14 +36,14 @@
             praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing
             eget accumsan ac nunc adipiscing adipiscing.
           </p>
-        </section>
+        </aside>
 
         <section class="article">
           <h2 class="article__headline">Czego sie uczymy?</h2>
           <a href="#HTML">HTMLa</a> <a href="#CSS">CSSa</a>
           <a href="#JavaScript">JaveScriptu</a>
 
-          <article class="article" id="HTML">
+          <article class="article__subarticle" id="HTML">
             <h3 class="article__headline article__headline--h3">HTML-a</h3>
             <p class="article__paragraph">
               Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem
@@ -57,7 +56,7 @@
             </p>
           </article>
 
-          <article id="CSS">
+          <article class="article__subarticle" id="CSS">
             <h3 class="article__headline article__headline--h3">CSSa</h3>
             <p class="article__paragraph">
               Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem
@@ -70,7 +69,7 @@
             </p>
           </article>
 
-          <article id="JavaScript">
+          <article class="article__subarticle" id="JavaScript">
             <h3 class="article__headline article__headline--h3">JavaScryptu</h3>
             <p class="article__paragraph">
               Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem
@@ -83,12 +82,12 @@
             </p>
           </article>
         </section>
-      </div>
-    </main>
+      
 
-    <footer class="main">
+    <footer class="footer">
       Strona Domowa Rafała <a href="#top">Wróć na górę strony</a>
     </footer>
+  </main>
     <script src="main.js"></script>
   </body>
 </html>

@@ -33,14 +33,34 @@ a {
 .navigation__links--homepage {
   color: #ffffff;
 }
+.grid{
+  display: grid;
+}
 .main {
   max-width: 1000px;
   margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-gap: 20px;
+  grid-template-areas: "header header"
+"article aside"
+"footer footer";
 }
 
 .article {
   color: navy;
   background: rgb(214, 207, 207);
+  padding: 10px;
+  border: lightcoral solid;
+  margin-bottom: 10px;
+  grid-area: article;
+}
+
+.article__subarticle{
+  border: rgb(240, 10, 10) solid;
+  margin-bottom: 10px;
+  background: lightgreen;
+
 }
 
 .article__headline {
@@ -59,4 +79,16 @@ a {
 .images{
   width: 200px;
   height: 200px;
+}
+
+.header{
+  grid-area: header;
+}
+
+.aside{
+  grid-area: aside;
+}
+
+.footer{
+  grid-area: footer;
 }
