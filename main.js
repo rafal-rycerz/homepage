@@ -8,3 +8,12 @@ console.log(age)
 
 const heading = document.querySelector('.naglowek')
 heading.innerHTML = "Bla Bla Bla"
+
+const hamburger = document.querySelector('.hamburger--js')
+
+hamburger.addEventListener('click', () =>{
+    const nav = document.querySelector('.navigation--js');
+    nav.classList.toggle('navigation--open');
+})
+
+

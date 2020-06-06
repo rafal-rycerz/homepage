@@ -8,8 +8,8 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navigation">
+    <header class="nav">
+      <nav class="navigation navigation--js">
         <a
           class="navigation__links navigation__links--homepage"
           href="index.html"
@@ -19,14 +19,33 @@
         <a class="navigation__links" href="CSS.html">CSS</a>
         <a class="navigation__links" href="JavaScript.html">JavaScript</a>
       </nav>
+      <button class="hamburger hamburger--js">🍔</button>
     </header>
 
     <main class="main">
-        <header id="top" class="header">
-          <h1>Rafał - Strona Domowa</h1>
-        </header>
-        <aside class="aside">
-          <h2 class="article__headline">Kim Jestem?</h2>
+      <header id="top" class="header naglowek">
+        <h1>Rafał - Strona Domowa</h1>
+      </header>
+      <aside class="aside">
+        <h2 class="article__headline">Kim Jestem?</h2>
+        <p class="article__paragraph">
+          Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem
+          sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus
+          justo adipiscing adipiscing amet placerat accumsan. Vis. Faucibus odio
+          magna tempus adipiscing a non. In mi primis arcu ut non accumsan
+          vivamus ac blandit adipiscing adipiscing arcu metus praesent turpis eu
+          ac lacinia nunc ac commodo gravida adipiscing eget accumsan ac nunc
+          adipiscing adipiscing.
+        </p>
+      </aside>
+
+      <section class="article">
+        <h2 class="article__headline">Czego sie uczymy?</h2>
+        <a href="#HTML">HTMLa</a> <a href="#CSS">CSSa</a>
+        <a href="#JavaScript">JaveScriptu</a>
+
+        <article class="article__subarticle" id="HTML">
+          <h3 class="article__headline article__headline--h3">HTML-a</h3>
           <p class="article__paragraph">
             Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem
             sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus
@@ -36,58 +55,39 @@
             praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing
             eget accumsan ac nunc adipiscing adipiscing.
           </p>
-        </aside>
+        </article>
 
-        <section class="article">
-          <h2 class="article__headline">Czego sie uczymy?</h2>
-          <a href="#HTML">HTMLa</a> <a href="#CSS">CSSa</a>
-          <a href="#JavaScript">JaveScriptu</a>
+        <article class="article__subarticle" id="CSS">
+          <h3 class="article__headline article__headline--h3">CSSa</h3>
+          <p class="article__paragraph">
+            Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem
+            sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus
+            justo adipiscing adipiscing amet placerat accumsan. Vis. Faucibus
+            odio magna tempus adipiscing a non. In mi primis arcu ut non
+            accumsan vivamus ac blandit adipiscing adipiscing arcu metus
+            praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing
+            eget accumsan ac nunc adipiscing adipiscing.
+          </p>
+        </article>
 
-          <article class="article__subarticle" id="HTML">
-            <h3 class="article__headline article__headline--h3">HTML-a</h3>
-            <p class="article__paragraph">
-              Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem
-              sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus
-              justo adipiscing adipiscing amet placerat accumsan. Vis. Faucibus
-              odio magna tempus adipiscing a non. In mi primis arcu ut non
-              accumsan vivamus ac blandit adipiscing adipiscing arcu metus
-              praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing
-              eget accumsan ac nunc adipiscing adipiscing.
-            </p>
-          </article>
+        <article class="article__subarticle" id="JavaScript">
+          <h3 class="article__headline article__headline--h3">JavaScryptu</h3>
+          <p class="article__paragraph">
+            Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem
+            sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus
+            justo adipiscing adipiscing amet placerat accumsan. Vis. Faucibus
+            odio magna tempus adipiscing a non. In mi primis arcu ut non
+            accumsan vivamus ac blandit adipiscing adipiscing arcu metus
+            praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing
+            eget accumsan ac nunc adipiscing adipiscing.
+          </p>
+        </article>
+      </section>
 
-          <article class="article__subarticle" id="CSS">
-            <h3 class="article__headline article__headline--h3">CSSa</h3>
-            <p class="article__paragraph">
-              Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem
-              sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus
-              justo adipiscing adipiscing amet placerat accumsan. Vis. Faucibus
-              odio magna tempus adipiscing a non. In mi primis arcu ut non
-              accumsan vivamus ac blandit adipiscing adipiscing arcu metus
-              praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing
-              eget accumsan ac nunc adipiscing adipiscing.
-            </p>
-          </article>
-
-          <article class="article__subarticle" id="JavaScript">
-            <h3 class="article__headline article__headline--h3">JavaScryptu</h3>
-            <p class="article__paragraph">
-              Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem
-              sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus
-              justo adipiscing adipiscing amet placerat accumsan. Vis. Faucibus
-              odio magna tempus adipiscing a non. In mi primis arcu ut non
-              accumsan vivamus ac blandit adipiscing adipiscing arcu metus
-              praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing
-              eget accumsan ac nunc adipiscing adipiscing.
-            </p>
-          </article>
-        </section>
-      
-
-    <footer class="footer">
-      Strona Domowa Rafała <a href="#top">Wróć na górę strony</a>
-    </footer>
-  </main>
+      <footer class="footer">
+        Strona Domowa Rafała <a href="#top">Wróć na górę strony</a>
+      </footer>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>
