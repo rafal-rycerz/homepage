@@ -80,6 +80,13 @@ display: none;
   background: khaki;
   font-size: 30px;
 }
+
+.article__headline::before{
+content: "🍔";
+font-size: 16px;
+}
+
+
 .article__headline--h3 {
   font-size: 20px;
 }
